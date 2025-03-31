@@ -14,7 +14,7 @@ const Home = () => {
     try {
       //calling the API
       const enhancedURL = await enhancedImageAPI(file);
-      setEnhancedImage(enhancedURL);
+      setEnhancedImage(enhancedURL.image);
       setLoading(false);
     } catch (err) {
       console.log(err);
@@ -27,7 +27,7 @@ const Home = () => {
       <ImagePreview
         loading={loading}
         uploaded={uploadImage}
-        enhanced={enhancedImage}
+        enhanced={enhancedImage?.image}
       />
     </>
   );
