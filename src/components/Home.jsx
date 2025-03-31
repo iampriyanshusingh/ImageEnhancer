@@ -2,7 +2,7 @@ import ImageUpload from "./ImageUpload";
 import ImagePreview from "./ImagePreview";
 import { useState } from "react";
 
-import { enhancedImageAPI } from "../utils/enhancedImageAPI.js";
+import { enhancedImageAPI } from "../utils/enhancedImageAPI";
 
 const Home = () => {
   const [uploadImage, setUploadImage] = useState(null);
