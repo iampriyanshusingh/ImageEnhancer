@@ -1,12 +1,101 @@
-# React + Vite
+# 📸 Image Enhancer Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### ✨ Enhance your images with AI-powered upscaling
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📷 **Upload** any image
+- 🖼️ **AI-powered enhancement** for better resolution
+- 📥 **Download enhanced images**
+- 🎨 **Smooth UI & easy-to-use**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS
+- **Backend API:** Axios (for API calls)
+- **AI Processing:** Third-party image enhancement API
+
+---
+
+## 📦 Installation
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/iampriyanshusingh/ImageEnhancer.git
+cd image-enhancer
+```
+
+### Install Dependencies
+
+```sh
+npm install
+```
+
+### Create `.env` File
+
+```sh
+touch .env
+```
+
+Add your API key inside `.env`:
+
+```
+REACT_APP_API_KEY=your_api_key_here
+```
+
+### Start the Development Server
+
+```sh
+npm start
+```
+
+---
+
+## 🖼️ Usage
+
+1. **Upload an image** from your local device.
+2. **Click Enhance** to send it to the AI processor.
+3. **Wait for processing** (tracked with a loading indicator).
+4. **Download** the enhanced image.
+
+---
+
+## 📌 Folder Structure
+
+```
+📂 image-enhancer/
+│-- 📂 src/
+│   │-- 📂 components/
+│   │   ├── ImageUploader.js
+│   │   ├── ImagePreview.js
+│   │   ├── Loading.js
+│   │-- 📂 api/
+│   │   ├── enhancedImageAPI.js
+│   │-- App.js
+│   │-- index.js
+│-- .env (ignored in Git)
+│-- .gitignore
+│-- README.md
+│-- package.json
+```
+
+---
+
+## 📜 License
+
+This project is **MIT Licensed**. Feel free to modify and improve it!
+
+---
+
+## 🙌 Contribution
+
+Contributions are welcome! Feel free to open issues and pull requests.
+
+---
+
+## 🌟 Acknowledgments
+
+Thanks to open-source tools & AI APIs for making this possible! 🚀
